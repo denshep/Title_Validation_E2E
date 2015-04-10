@@ -10,5 +10,5 @@ import org.junit.runners.Suite;
         SeleniumTest.class
 })
 
-public class AllTest {
+public class AllTests {
 }
