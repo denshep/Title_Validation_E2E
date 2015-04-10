@@ -1,11 +1,11 @@
-TC-001.01,http://learn2test.com,learn2test.com
+TC-001.01,http://learn2test.net,learn2test.net
 TC-001.02,https://google.com,Google
 TC-001.03,http://www.yahoo.com,Yahoo
-TC-001.04,http://www.bmwusa.com,"BMW North America, LLC"
+TC-001.04,http://www.bmwusa.com,"BMW of North America", LLC"
 TC-001.05,http://http://stackoverflow.com,Stack Overflow
-TC-001.06,http://www.dpreview.com,Dp
+TC-001.06,http://www.dpreview.com,Digital Photography Review: Digital Photography Review
 TC-001.07,http://www.bikeradar.com,"Bikes, Bike Reviews, Cycling Routes, Race News  - BikeRadar"
-TC-001.08,http://www.alibaba.com,fake,"Manufacturers, Suppliers, Exporters Importers from the world's largest online B2B marketplace-Alibaba.com"
+TC-001.08,http://www.alibaba.com,git "Manufacturers, Suppliers, Exporters Importers from the world's largest online B2B marketplace-Alibaba.com"
 TC-001.09,http://www.adobe.com,"Adobe: Creative, marketing, and document management solutions"
 TC-001.10,http://www.abesofmaine.com,Welcome to Abe's of Maine - Cameras and Electronics since 1979
 TC-001.11,http://www.academyartonline.com,Academy of Art University: Online Art School, Online Art Schools

@@ -18,9 +18,6 @@ public class Selenium {
 
     public String[][] a2d() throws IOException {
 
-
-        System.out.println("Number of lines = ");
-
         String csvFile = "./src/main/resources/Title_Validation.csv";
         BufferedReader br = null;
         String line = null;
@@ -32,12 +29,6 @@ public class Selenium {
         String url = null;
         String title_expected = null;
 
-        //Print count results for checking
-
-        System.out.println("Number of lones = " + lines);
-        System.out.println("Number of lones = " + columns);
-
-
 
         //Counting lines and columns
 
@@ -48,11 +39,6 @@ public class Selenium {
             columns = column.length;
         }
         br.close();
-
-        //Print count results for checking
-
-        System.out.println("Number of lines = " + lines);
-        System.out.println("Number of lines = " + columns);
 
 
         String s2d[][] = new String [lines][columns];
