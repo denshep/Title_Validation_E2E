@@ -1,7 +1,10 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 
+import javax.sql.StatementEventListener;
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +14,12 @@ import java.util.concurrent.TimeUnit;
  */
 public class Selenium {
 
+
+
     public String[][] a2d() throws IOException {
+
+
+        System.out.println("Number of lines = ");
 
         String csvFile = "./src/main/resources/Title_Validation.csv";
         BufferedReader br = null;
@@ -24,18 +32,32 @@ public class Selenium {
         String url = null;
         String title_expected = null;
 
+        //Print count results for checking
+
+        System.out.println("Number of lones = " + lines);
+        System.out.println("Number of lones = " + columns);
+
+
+
         //Counting lines and columns
 
         br = new BufferedReader(new FileReader(csvFile));
-        while ((line = br.readLine())!=null){
+        while ((line = br.readLine()) != null){
             lines++;
             column = line.split(SplitBy);
             columns = column.length;
         }
         br.close();
 
+        //Print count results for checking
+
+        System.out.println("Number of lines = " + lines);
+        System.out.println("Number of lines = " + columns);
+
+
         String s2d[][] = new String [lines][columns];
         br = new BufferedReader(new FileReader(csvFile));
+
         WebDriver driver = new FirefoxDriver();
         int i = 0;
         while ((line = br.readLine()) != null){
@@ -62,7 +84,8 @@ public class Selenium {
 
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
+        Selenium selenium = new Selenium();
+        selenium.a2d();
     }
 }

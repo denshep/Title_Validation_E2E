@@ -1,14 +1,17 @@
 import edu.emory.mathcs.backport.java.util.Arrays;
 import junit.framework.ComparisonFailure;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import org.junit.runners.Parameterized;
 
 import java.io.IOException;
 import java.util.Collection;
 
-import static org.junit.Assert.assertEquals;
+import static junit.framework.Assert.assertEquals;
+
 
 @RunWith(Parameterized.class)
 
